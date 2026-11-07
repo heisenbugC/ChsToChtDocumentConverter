@@ -1,7 +1,7 @@
 # ChsToChtDocumentConverter — High-Fidelity Simplified-to-Traditional Chinese Document Converter
 
 > 🌐 **Language / 语言**: [**English (Default)**](./README.md) | [**简体中文**](./README.zh-CN.md)  
-> *(Tip: Enable browser automatic translation or click **简体中文** above / 提示：支持浏览器根据语言偏好自动转换，或点击上方「简体中文」直接切换)*
+
 
 ---
 
