@@ -1,0 +1,15 @@
+*.log
+*.png
+Plan.md
+*.doc
+*.odt
+*.docx
+*.pdf
+*.jpg
+*.jpg.orig_ocr.txt
+*.jpg.ocr.txt
+dist/
+.dsh/
+.roo/
+.venv/
+.idea/

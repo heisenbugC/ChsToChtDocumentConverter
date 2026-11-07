@@ -1,0 +1,48 @@
+chcp 65001 >nul
+set PYTHONUTF8=1
+set VSLANG=1033
+".venv\Scripts\python.exe" -m nuitka ^
+    --standalone ^
+    --assume-yes-for-downloads ^
+    --show-progress ^
+    --show-memory ^
+    --enable-plugin=pyside6 ^
+    --windows-console-mode=disable ^
+    --windows-icon-from-ico=icon.ico ^
+    --include-package-data=qfluentwidgets ^
+    --include-package-data=opencc ^
+    --include-package-data=pymupdf ^
+    --include-data-file="my_s2tw.json=my_s2tw.json" ^
+    --include-data-file="my_STPhrases.txt=my_STPhrases.txt" ^
+    --include-data-file="my_STCharacters.txt=my_STCharacters.txt" ^
+    --no-deployment-flag=excluded-module-usage ^
+    --noinclude-custom-mode=pymupdf.mupdf:bytecode ^
+    --nofollow-import-to=scipy ^
+    --nofollow-import-to=numpy ^
+    --nofollow-import-to=PySide6.QtWebEngine ^
+    --nofollow-import-to=PySide6.QtWebEngineCore ^
+    --nofollow-import-to=PySide6.QtWebEngineWidgets ^
+    --nofollow-import-to=PySide6.Qt3DCore ^
+    --nofollow-import-to=PySide6.Qt3DRender ^
+    --nofollow-import-to=PySide6.QtQuick ^
+    --nofollow-import-to=PySide6.QtQml ^
+    --nofollow-import-to=PySide6.QtSensors ^
+    --nofollow-import-to=PySide6.QtMultimedia ^
+    --nofollow-import-to=PySide6.QtNetwork ^
+    --nofollow-import-to=PySide6.QtSql ^
+    --nofollow-import-to=PySide6.QtTest ^
+    --nofollow-import-to=PySide6.QtCharts ^
+    --nofollow-import-to=PySide6.QtDataVisualization ^
+    --nofollow-import-to=PySide6.QtLocation ^
+    --nofollow-import-to=PySide6.QtPositioning ^
+    --nofollow-import-to=PySide6.QtBluetooth ^
+    --nofollow-import-to=PySide6.QtTextToSpeech ^
+    --nofollow-import-to=PySide6.QtPdf ^
+    --nofollow-import-to=PySide6.QtWebSockets ^
+    --nofollow-import-to=PySide6.QtDesigner ^
+    --nofollow-import-to=PySide6.QtHelp ^
+    --nofollow-import-to=PySide6.QtRemoteObjects ^
+    --nofollow-import-to=PySide6.QtSerialPort ^
+    --nofollow-import-to=PySide6.QtWebView ^
+    --output-dir=dist ^
+    app_ui.py
